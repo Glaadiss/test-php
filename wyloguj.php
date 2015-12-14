@@ -4,7 +4,7 @@ if(!$_SESSION['nick'])
 header('Location: zaloguj.php');
 exit;
 }
-session_unset();
+session_unset($_SESSION['nick']);
 header('Location: zaloguj.php');
 exit;
 ?>
